@@ -1,0 +1,15 @@
+.home-page-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    justify-content: center;
+    width: 100%;
+}
+
+.home-page-subcontainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

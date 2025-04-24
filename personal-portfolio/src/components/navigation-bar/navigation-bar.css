@@ -1,0 +1,27 @@
+.navigation-bar-container {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 32px 0 auto;
+}
+
+.navigation-bar-btn {
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+    transition: 0.3s;
+}
+
+.navigation-bar-btn:hover { color: #999999; }
+
+.navigation-bar-divider {
+    align-self: stretch;
+    color: #000000;
+    margin: 20px 0 0 0;
+    width: 1px;
+}
