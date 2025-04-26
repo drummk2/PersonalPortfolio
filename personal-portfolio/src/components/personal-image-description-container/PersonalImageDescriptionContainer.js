@@ -1,5 +1,4 @@
 import PersonalImageDescription from "../personal-image-description/PersonalImageDescription";
-import React from "react";
 import "./personal-image-description-container.css"
 
 const PersonalImageDescriptionContainer = () => {

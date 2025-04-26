@@ -1,4 +1,3 @@
-import React from "react";
 import "./header-text-container.css"
 
 const HeaderTextContainer = () => {

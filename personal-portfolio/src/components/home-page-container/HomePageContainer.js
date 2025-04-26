@@ -1,6 +1,5 @@
 import PersonalImage from "../personal-image/PersonalImage";
 import PersonalImageDescriptionContainer from "../personal-image-description-container/PersonalImageDescriptionContainer";
-import React from "react";
 import "./home-page-container.css";
 
 const HomePageContainer = () => {
