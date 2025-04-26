@@ -1,5 +1,5 @@
 .footer-text-container {
-    align-items: left;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: center;

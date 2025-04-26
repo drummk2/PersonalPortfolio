@@ -5,20 +5,26 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 16px;
+    width: 100%;
 }
 
 .footer {
-    position: fixed;
     bottom: 0;
+    position: fixed;
     width: 100%;
-    background: #fff;
 }
 
 .footer-line { border-top: 1px solid #ccc; margin: 0; }
 
 .footer-content-container {
-    align-items: left;
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .home-page-subcontainer { align-items: center; flex-direction: column; }
+    .personal-image-description-container { margin-left: 0; }
 }

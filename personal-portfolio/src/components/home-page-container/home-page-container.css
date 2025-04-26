@@ -1,15 +1,21 @@
 .home-page-container {
     align-items: center;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    height: 75%;
+    height: 80%;
     justify-content: center;
+    max-height: 80%;
+    max-width: 100%;
+    overflow: hidden;
     width: 100%;
 }
 
 .home-page-subcontainer {
     align-items: flex-start;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 }
