@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import FooterTextContainer from "./components/footer-text-container/FooterTextContainer";
 import HomePageContainer from "./components/home-page-container/HomePageContainer";
 import HeaderTextContainer from "./components/header-text-container/HeaderTextContainer";
 import NavigationBar from "./components/navigation-bar/NavigationBar";
@@ -16,28 +17,28 @@ function App() {
             PageComponent = HomePageContainer;
     }
 
+    const footerEntries = [
+        { header: "Email", content: "klrdrumm@outlook.com" },
+        { header: "LinkedIn", content: <a href="https://www.linkedin.com/in/kieron-drumm-788382114/">https://www.linkedin.com/in/kieron-drumm-788382114/</a> },
+        { header: "GitHub", content: <a href="https://github.com/drummk2">https://github.com/drummk2</a> }
+    ];
+
     return (
         <div className="App">
             <div className="header-container">
                 <HeaderTextContainer />
-                <NavigationBar onChangePage={setPage}/>
+                <NavigationBar onChangePage={setPage} />
             </div>
             <PageComponent />
             <footer>
                 <hr className="footer-line" />
                 <div className="footer-content-container">
-                    <div className="footer-text-container">
-                        <p className="footer-text-header">Email</p>
-                        <p className="footer-text-content">klrdrumm@outlook.com</p>
-                    </div>
-                    <div className="footer-text-container">
-                        <p className="footer-text-header">LinkedIn</p>
-                        <p className="footer-text-content"><a href="https://www.linkedin.com/in/kieron-drumm-788382114/">https://www.linkedin.com/in/kieron-drumm-788382114/</a></p>
-                    </div>
-                    <div className="footer-text-container">
-                        <p className="footer-text-header">GitHub</p>
-                        <p className="footer-text-content"><a href="https://github.com/drummk2">https://github.com/drummk2</a></p>
-                    </div>
+                    {footerEntries.map((footerEntry) => (
+                        <FooterTextContainer
+                            footerTextHeader={footerEntry.header}
+                            footerTextContent={footerEntry.content}
+                        />
+                    ))}
                 </div>
             </footer>
         </div>
