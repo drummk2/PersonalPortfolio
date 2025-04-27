@@ -15,13 +15,19 @@
     width: 100%;
 }
 
-.footer-line { border-top: 1px solid #ccc; margin: 0; }
+.footer-line { border-top: 1px solid #cccccc; margin: 0; }
 
 .footer-content-container {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.divider-line {
+    border-top: 1px solid #cccccc;
+    margin: 0 32px;
+    width: 30%;
 }
 
 @media (max-width: 768px) {

@@ -4,9 +4,18 @@
     display: flex;
     flex-direction: column;
     height: 80%;
-    justify-content: center;
+    justify-content: flex-start;
     max-height: 80%;
     max-width: 100%;
     overflow: hidden;
+    width: 100%;
+}
+
+.education-page-subcontainer {
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
 }
