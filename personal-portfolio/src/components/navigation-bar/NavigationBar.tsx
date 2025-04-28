@@ -1,7 +1,12 @@
-import NavigationBarLocations from "../../enums/navigationbarlocations.js";
-import "./navigation-bar.css"
+import React from "react";
+import NavigationBarLocations from "../../enums/navigationbarlocations";
+import "./navigation-bar.css";
 
-const NavigationBarbar = ({ onChangePage }) => {
+interface NavigationBarProps {
+    onChangePage: (page: NavigationBarLocations) => void;
+}
+
+const NavigationBar: React.FC<NavigationBarProps> = ({ onChangePage }) => {
     return (
         <nav className="navigation-bar-container">
             <button className="navigation-bar-btn" onClick={() => onChangePage(NavigationBarLocations.ABOUT)}>About Me</button>
@@ -13,6 +18,6 @@ const NavigationBarbar = ({ onChangePage }) => {
             <button className="navigation-bar-btn" onClick={() => onChangePage(NavigationBarLocations.PROJECTS)}>Projects</button>
         </nav>
     );
-}
+};
 
-export default NavigationBarbar;
+export default NavigationBar;

@@ -1,10 +1,19 @@
+import React from "react";
 import "./education-entry.css";
 
-const EducationPageContainer = ({
+interface EducationPageContainerProps {
+    educationEntryLocation: string;
+    educationEntryQualification: string;
+    educationEntryTimeframe: string;
+    educationEntryDescription: React.ReactNode;
+}
+
+const EducationPageContainer: React.FC<EducationPageContainerProps> = ({
     educationEntryLocation,
     educationEntryQualification,
     educationEntryTimeframe,
-    educationEntryDescription }) => {
+    educationEntryDescription
+}) => {
     return (
         <div className="education-entry">
             <p className="education-entry-location">{educationEntryLocation}</p>

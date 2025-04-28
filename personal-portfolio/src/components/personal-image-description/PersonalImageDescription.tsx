@@ -1,6 +1,7 @@
-import "./personal-image-description.css"
+import React from "react";
+import "./personal-image-description.css";
 
-const PersonalImageDescription = () => {
+const PersonalImageDescription: React.FC = () => {
     return (
         <>
             <h2 className="personal-image-description-header">Kieron Drumm</h2>

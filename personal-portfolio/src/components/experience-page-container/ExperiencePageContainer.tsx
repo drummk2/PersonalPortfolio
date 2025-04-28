@@ -1,6 +1,7 @@
+import React from "react";
 import "./experience-page-container.css";
 
-const ExperiencePageContainer = () => {
+const ExperiencePageContainer: React.FC = () => {
     return (
         <div className="experience-page-container"></div>
     );

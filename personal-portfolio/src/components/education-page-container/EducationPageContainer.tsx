@@ -1,9 +1,17 @@
+import React from "react";
 import EducationEntry from "../education-entry/EducationEntry";
 import "./education-page-container.css";
 
-const EducationPageContainer = () => {
+interface EducationDataEntry {
+    educationEntryLocation: string;
+    educationEntryQualification: string;
+    educationEntryTimeframe: string;
+    educationEntryDescription: React.ReactNode;
+}
+
+const EducationPageContainer: React.FC = () => {
     /* Create a collection of qualifications to be rendered. */
-    const educationData = [
+    const educationData: EducationDataEntry[] = [
         {
             educationEntryLocation: "Dublin City University",
             educationEntryQualification: "Bachelor's Degree (Honours), Computer Applications",
@@ -45,7 +53,7 @@ const EducationPageContainer = () => {
         <div className="education-page-container">
             <div className="education-page-subcontainer">
                 {educationData.map((entry, index) => (
-                    <>
+                    <div key={index}>
                         <EducationEntry
                             educationEntryLocation={entry.educationEntryLocation}
                             educationEntryQualification={entry.educationEntryQualification}
@@ -53,7 +61,7 @@ const EducationPageContainer = () => {
                             educationEntryDescription={entry.educationEntryDescription}
                         />
                         {index < educationData.length - 1 && <div className="divider-line"></div>}
-                    </>
+                    </div>
                 ))}
             </div>
         </div>

@@ -1,6 +1,7 @@
+import React from "react";
 import "./projects-page-container.css";
 
-const ProjectsPageContainer = () => {
+const ProjectsPageContainer: React.FC = () => {
     return (
         <div className="projects-page-container"></div>
     );

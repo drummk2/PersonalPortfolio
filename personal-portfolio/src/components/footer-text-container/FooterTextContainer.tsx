@@ -1,7 +1,12 @@
-import { memo } from "react";
+import React, { memo } from "react";
 import "./footer-text-container.css";
 
-const FooterTextContainer = memo(({ footerTextHeader, footerTextContent }) => {
+interface FooterTextContainerProps {
+    footerTextHeader: string;
+    footerTextContent: React.ReactNode;
+}
+
+const FooterTextContainer = memo(({ footerTextHeader, footerTextContent }: FooterTextContainerProps) => {
     return (
         <div className="footer-text-container">
             <p className="footer-text-header">{footerTextHeader}</p>

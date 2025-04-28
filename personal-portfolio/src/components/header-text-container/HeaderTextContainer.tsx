@@ -1,6 +1,7 @@
-import "./header-text-container.css"
+import React from "react";
+import "./header-text-container.css";
 
-const HeaderTextContainer = () => {
+const HeaderTextContainer: React.FC = () => {
     return (
         <>
             <h1 className="header-text-name">Kieron Drumm</h1>
