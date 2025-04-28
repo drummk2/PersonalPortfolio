@@ -11,7 +11,7 @@ interface EducationDataEntry {
 
 const EducationPageContainer: React.FC = () => {
     /* Create a collection of qualifications to be rendered. */
-    const educationData: EducationDataEntry[] = [
+    const educationData: Array<EducationDataEntry> = [
         {
             educationEntryLocation: "Dublin City University",
             educationEntryQualification: "Bachelor's Degree (Honours), Computer Applications",
@@ -52,9 +52,11 @@ const EducationPageContainer: React.FC = () => {
     return (
         <div className="education-page-container">
             <div className="education-page-subcontainer">
+                <h1 className="education-page-main-header">Education</h1>
                 {educationData.map((entry, index) => (
                     <>
                         <EducationEntry
+                            educationEntryId={index}
                             educationEntryLocation={entry.educationEntryLocation}
                             educationEntryQualification={entry.educationEntryQualification}
                             educationEntryTimeframe={entry.educationEntryTimeframe}

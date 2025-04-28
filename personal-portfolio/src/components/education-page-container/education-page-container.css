@@ -18,3 +18,9 @@
     justify-content: flex-start;
     width: 100%;
 }
+
+.education-page-main-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 0 32px;
+}
