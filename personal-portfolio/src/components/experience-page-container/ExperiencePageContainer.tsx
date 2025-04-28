@@ -6,7 +6,7 @@ const ExperiencePageContainer: React.FC = () => {
     return (
         <div className="experience-page-container">
             <img
-                alt="Stay tuned"
+                alt="Stay tuned."
                 src={stayTunedImage} />
         </div>
     );

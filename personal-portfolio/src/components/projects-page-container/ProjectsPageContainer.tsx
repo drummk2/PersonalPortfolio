@@ -6,7 +6,7 @@ const ProjectsPageContainer: React.FC = () => {
     return (
         <div className="projects-page-container">
             <img
-                alt="Stay tuned"
+                alt="Stay tuned."
                 src={stayTunedImage} />
         </div>
     );
