@@ -53,7 +53,7 @@ const EducationPageContainer: React.FC = () => {
         <div className="education-page-container">
             <div className="education-page-subcontainer">
                 {educationData.map((entry, index) => (
-                    <div key={index}>
+                    <>
                         <EducationEntry
                             educationEntryLocation={entry.educationEntryLocation}
                             educationEntryQualification={entry.educationEntryQualification}
@@ -61,7 +61,7 @@ const EducationPageContainer: React.FC = () => {
                             educationEntryDescription={entry.educationEntryDescription}
                         />
                         {index < educationData.length - 1 && <div className="divider-line"></div>}
-                    </div>
+                    </>
                 ))}
             </div>
         </div>
