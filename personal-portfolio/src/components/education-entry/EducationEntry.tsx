@@ -1,7 +1,7 @@
 import React from "react";
 import "./education-entry.css";
 
-interface EducationPageContainerProps {
+interface EducationEntryProps {
     educationEntryId: number,
     educationEntryLocation: string;
     educationEntryQualification: string;
@@ -9,7 +9,7 @@ interface EducationPageContainerProps {
     educationEntryDescription: React.ReactNode;
 }
 
-const EducationPageContainer: React.FC<EducationPageContainerProps> = ({
+const EducationEntry: React.FC<EducationEntryProps> = ({
     educationEntryId,
     educationEntryLocation,
     educationEntryQualification,
@@ -26,4 +26,4 @@ const EducationPageContainer: React.FC<EducationPageContainerProps> = ({
     );
 };
 
-export default EducationPageContainer;
+export default EducationEntry;
