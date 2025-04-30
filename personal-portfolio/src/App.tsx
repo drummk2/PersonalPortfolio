@@ -42,7 +42,7 @@ function App() {
     return (
         <div className="App">
             <div className="header-container">
-                <HeaderTextContainer />
+                <HeaderTextContainer onChangePage={setPage} />
                 <NavigationBar onChangePage={setPage} />
             </div>
             <PageComponent />

@@ -1,13 +1,18 @@
 import React from "react";
+import NavigationBarLocations from "../../enums/navigationbarlocations";
 import "./header-text-container.css";
 
-const HeaderTextContainer: React.FC = () => {
+interface HeaderTextContainerProps {
+    onChangePage: (page: NavigationBarLocations) => void;
+}
+
+const HeaderTextContainer: React.FC<HeaderTextContainerProps> = ({ onChangePage }) => {
     return (
-        <>
+        <div className="header-text-container" onClick={() => onChangePage(NavigationBarLocations.ABOUT)} style={{ cursor: "pointer" }}>
             <div className="header-logo"></div>
             <h1 className="header-text-name">Kieron Drumm</h1>
             <p className="header-text-title">Full-Stack Software Engineer</p>
-        </>
+        </div>
     );
 };
 
