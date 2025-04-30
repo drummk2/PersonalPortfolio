@@ -135,7 +135,7 @@ const ExperiencePageContainer: React.FC = () => {
             experienceEntryTimeframe: "Sep 2014 - April 2015",
             experienceEntryDescription: (
                 <>
-                    • Aided and taught a group of 10-12 first year students per semester during the second year of my degree. The exercises given
+                    • Aided and taught a group of 10-12 first-year students per semester during the second year of my degree. The exercises given
                     to these first-year students covered the basic concepts of programming in Java. Said exercises were graded each week by myself
                     along with additional weekly coding assignments.
                 </>
