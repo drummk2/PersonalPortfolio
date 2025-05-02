@@ -9,13 +9,9 @@ interface NavigationBarProps {
 const NavigationBar: React.FC<NavigationBarProps> = ({ onChangePage }) => {
     return (
         <nav className="navigation-bar-container">
-            <button className="navigation-bar-btn" onClick={() => onChangePage(NavigationBarLocations.ABOUT)}>About Me</button>
-            <span className="navigation-bar-divider">|</span>
             <button className="navigation-bar-btn" onClick={() => onChangePage(NavigationBarLocations.EDUCATION)}>Education</button>
             <span className="navigation-bar-divider">|</span>
             <button className="navigation-bar-btn" onClick={() => onChangePage(NavigationBarLocations.EXPERIENCE)}>Experience</button>
-            <span className="navigation-bar-divider">|</span>
-            <button className="navigation-bar-btn" onClick={() => onChangePage(NavigationBarLocations.PROJECTS)}>Projects</button>
         </nav>
     );
 };

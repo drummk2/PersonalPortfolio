@@ -1,8 +1,7 @@
 enum NavigationBarLocations {
-  ABOUT = "ABOUT",
+  HOME = "HOME",
   EDUCATION = "EDUCATION",
-  EXPERIENCE = "EXPERIENCE",
-  PROJECTS = "PROJECTS"
+  EXPERIENCE = "EXPERIENCE"
 }
 
 export default NavigationBarLocations;

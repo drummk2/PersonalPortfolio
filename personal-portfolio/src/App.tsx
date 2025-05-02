@@ -6,17 +6,16 @@ import HomePageContainer from "./components/home-page-container/HomePageContaine
 import HeaderTextContainer from "./components/header-text-container/HeaderTextContainer";
 import NavigationBar from "./components/navigation-bar/NavigationBar";
 import NavigationBarLocations from "./enums/navigationbarlocations";
-import ProjectsPageContainer from "./components/projects-page-container/ProjectsPageContainer";
 import "./App.css";
 
 function App() {
-    const [page, setPage] = useState<NavigationBarLocations>(NavigationBarLocations.ABOUT);
+    const [page, setPage] = useState<NavigationBarLocations>(NavigationBarLocations.HOME);
 
     /* Determine which page component should be rendered. */
     let PageComponent: React.ComponentType;
 
     switch (page) {
-        case NavigationBarLocations.ABOUT:
+        case NavigationBarLocations.HOME:
             PageComponent = HomePageContainer;
             break;
         case NavigationBarLocations.EDUCATION:
@@ -24,9 +23,6 @@ function App() {
             break;
         case NavigationBarLocations.EXPERIENCE:
             PageComponent = ExperiencePageContainer;
-            break;
-        case NavigationBarLocations.PROJECTS:
-            PageComponent = ProjectsPageContainer;
             break;
         default:
             PageComponent = HomePageContainer;

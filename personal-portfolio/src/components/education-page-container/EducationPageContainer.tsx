@@ -45,6 +45,16 @@ const EducationPageContainer: React.FC = () => {
                     • As a result of my final year project, I have a strong knowledge of automated transliteration, and statistical language modelling.
                 </>
             )
+        },
+        {
+            educationEntryLocation: "CCT College Dublin",
+            educationEntryQualification: "Level 5 FETAC Certification, Computer Programming",
+            educationEntryTimeframe: "Jun 2012 - Jun 2012",
+            educationEntryDescription: (
+                <>
+                    • This certificate involved learning the fundamental concepts of computer programming using the Java programming language.
+                </>
+            )
         }
     ];
 
