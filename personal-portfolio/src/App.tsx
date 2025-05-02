@@ -30,9 +30,8 @@ function App() {
 
     /* Use memoization to store the contents of the footer that will be rendered below. */
     const footerEntries = useMemo(() => [
-        { header: "Email", content: "klrdrumm@outlook.com" },
-        { header: "LinkedIn", content: <a href="https://www.linkedin.com/in/kieron-drumm-788382114/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/kieron-drumm-788382114/</a> },
-        { header: "GitHub", content: <a href="https://github.com/drummk2" target="_blank" rel="noopener noreferrer">https://github.com/drummk2</a> }
+        { header: "GitHub", content: <a href="https://github.com/drummk2" target="_blank" rel="noopener noreferrer">https://github.com/drummk2</a> },
+        { header: "LinkedIn", content: <a href="https://www.linkedin.com/in/kieron-drumm-788382114/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/kieron-drumm-788382114/</a> }
     ], []);
 
     return (
