@@ -13,9 +13,15 @@ const ExperiencePageContainer: React.FC = () => {
     /* Create a collection of qualifications to be rendered. */
     const experienceData: Array<ExperienceDataEntry> = [
         {
+            experienceEntryCompanyName: "New Payment Innovation Limited",
+            experienceEntryPosition: "Senior Full-Stack Developer",
+            experienceEntryTimeframe: "May 2025 - Present",
+            experienceEntryDescription: (<></>)
+        },
+        {
             experienceEntryCompanyName: "Generait",
             experienceEntryPosition: "Head of Engineering",
-            experienceEntryTimeframe: "Mar 2025 - Present",
+            experienceEntryTimeframe: "Mar 2025 - May 2025",
             experienceEntryDescription: (
                 <>
                     • Carried out all previous duties associated with the Full-Stack Software Engineer role.

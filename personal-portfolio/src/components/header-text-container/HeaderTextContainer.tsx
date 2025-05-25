@@ -11,7 +11,7 @@ const HeaderTextContainer: React.FC<HeaderTextContainerProps> = ({ onChangePage 
         <div className="header-text-container" onClick={() => onChangePage(NavigationBarLocations.HOME)} style={{ cursor: "pointer" }}>
             <div className="header-logo"></div>
             <h1 className="header-text-name">Kieron Drumm</h1>
-            <p className="header-text-title">Full-Stack Software Engineer</p>
+            <p className="header-text-title">Senior Full-Stack Developer</p>
         </div>
     );
 };
