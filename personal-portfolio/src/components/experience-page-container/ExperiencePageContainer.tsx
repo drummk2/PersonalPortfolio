@@ -16,7 +16,11 @@ const ExperiencePageContainer: React.FC = () => {
             experienceEntryCompanyName: "New Payment Innovation Limited",
             experienceEntryPosition: "Senior Full-Stack Developer",
             experienceEntryTimeframe: "May 2025 - Present",
-            experienceEntryDescription: (<></>)
+            experienceEntryDescription: (
+                <>
+                • Collaborated on developing a Next.js and React-based internal dashboard to visualize key product development and testing metrics.
+                The tool also supported organization-wide user configuration and integrated with Jira and GitHub for enhanced workflow visibility.
+                </>)
         },
         {
             experienceEntryCompanyName: "Generait",
