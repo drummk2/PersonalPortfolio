@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "create-react-app": "^5.1.0",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "jest": "^30.0.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0"
   }
 }
