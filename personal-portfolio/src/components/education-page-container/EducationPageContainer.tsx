@@ -64,7 +64,7 @@ const EducationPageContainer: React.FC = () => {
             <div className="education-page-subcontainer">
                 <h1 className="education-page-main-header">Education</h1>
                 {educationData.map((entry, index) => (
-                    <>
+                    <React.Fragment key={index}>
                         <EducationEntry
                             educationEntryId={index}
                             educationEntryLocation={entry.educationEntryLocation}
@@ -72,8 +72,8 @@ const EducationPageContainer: React.FC = () => {
                             educationEntryTimeframe={entry.educationEntryTimeframe}
                             educationEntryDescription={entry.educationEntryDescription}
                         />
-                        {index < educationData.length - 1 && <div className="divider-line"></div>}
-                    </>
+                        {index < educationData.length - 1 && <div className="divider-line" role="separator"></div>}
+                    </React.Fragment>
                 ))}
             </div>
         </div>
