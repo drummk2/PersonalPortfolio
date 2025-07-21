@@ -159,7 +159,7 @@ const ExperiencePageContainer: React.FC = () => {
             <div className="experience-page-subcontainer">
                 <h1 className="experience-page-main-header">Experience</h1>
                 {experienceData.map((entry, index) => (
-                    <>
+                    <React.Fragment key={index}>
                         <ExperienceEntry
                             experienceEntryId={index}
                             experienceEntryCompanyName={entry.experienceEntryCompanyName}
@@ -167,8 +167,8 @@ const ExperiencePageContainer: React.FC = () => {
                             experienceEntryTimeframe={entry.experienceEntryTimeframe}
                             experienceEntryDescription={entry.experienceEntryDescription}
                         />
-                        {index < experienceData.length - 1 && <div className="divider-line"></div>}
-                    </>
+                        {index < experienceData.length - 1 && <div className="divider-line" role="separator"></div>}
+                    </React.Fragment>
                 ))}
             </div>
         </div>
