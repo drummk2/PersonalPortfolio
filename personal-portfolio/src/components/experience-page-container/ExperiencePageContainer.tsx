@@ -15,11 +15,21 @@ const ExperiencePageContainer: React.FC = () => {
         {
             experienceEntryCompanyName: "New Payment Innovation Limited",
             experienceEntryPosition: "Senior Full-Stack Developer",
-            experienceEntryTimeframe: "May 2025 - Present",
+            experienceEntryTimeframe: "May 2025 - September 2025",
             experienceEntryDescription: (
                 <>
                 • Collaborated on developing a Next.js and React-based internal dashboard to visualize key product development and testing metrics.
                 The tool also supported organization-wide user configuration and integrated with Jira and GitHub for enhanced workflow visibility.
+                <br /><br />
+                • Designed a preliminary architecture for a customer-facing portal, including system diagrams, proposed database schema and entities,
+                and GraphQL integration strategies.
+                <br /><br />
+                • Contributed to the initial frontend and backend API repositories for the project, including setting up error logging with BugSnag,
+                authoring onboarding documentation, and defining and configuring relevant schemas.
+                <br /><br />
+                • Created a template repository to streamline bootstrapping for new projects, integrating essential configurations and dependencies
+                for React, Husky, BugSnag, Storybook, Prisma, and TypeScript, along with testing strategies and comprehensive usage guides to support
+                new developers.
                 </>)
         },
         {
